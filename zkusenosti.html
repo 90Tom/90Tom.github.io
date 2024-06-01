@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje zkušenosti</title>
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('minecraft bg3.jfif') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(51, 51, 51, 0.8);
+            flex-wrap: wrap;
+        }
+        .menu a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .menu a:hover {
+            background-color: rgba(87, 87, 87, 0.9);
+        }
+        .menu a.active {
+            background-color: rgba(35, 35, 35, 0.9);
+        }
+        header {
+            text-align: center;
+            background-color: rgba(244, 244, 244, 0.8);
+            padding: 10px 0;
+        }
+        header img {
+            max-width: 60%;
+            height: auto;
+        }
+        .content {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            flex: 1;
+        }
+        .content p {
+            font-size: 25px;
+        }
+        .autor {
+            text-align: center;
+            color: rgb(26, 26, 26);
+            font-size: 30px;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        footer {
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 10px 20px;
+            position: sticky;
+            width: 100%;
+            bottom: 0;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        footer img {
+            width: 20px;
+            height: auto;
+            margin-left: 5px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+            .menu a {
+                text-align: center;
+                padding: 10px;
+            }
+            footer {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (max-width: 480px) {
+            .content p {
+                font-size: 18px;
+            }
+            footer {
+                font-size: 14px;
+            }
+            footer img {
+                width: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><!-- HEADER -->
+        <img src="minecraft logo.png" alt="Header Image" loading="lazy">
+        <div class="autor">
+            Tomáš Macháček <br><br>
+        </div>
+    </header>
+    <div class="menu"><!-- MENU -->
+        <a href="home.html">Domů</a>
+        <a href="mody.html">Herní módy</a>
+        <a href="zkusenosti.html" class="active">Moje zkušenosti</a>
+        <a href="fotky.html">Fotky</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <!-- --------------------CONTENT-------------------- -->
+    <div class="content"><!-- HISTORIE -->
+        <h1>Historie</h1>
+        <p>Hru Minecraft jsem poprvé objevil před více než 13 lety, kdy mi strejda koupil účet a pojmenoval mě 90Tom.<br>
+           Jako malý jsem hrál každý den, a od té doby se to s pár výjimkami nezměnilo.<br>
+           Rád jsem stavěl, zapojoval redstone, hrál multiplayer a dělal všechno možné.<br>
+           Před více než třemi lety mě ale zaujalo speedrunování tehdy nové verze 1.16.1, což se stalo exponenciálním trendem po celém světě.
+        </p>
+    </div>
+    <div class="content"><!-- SPEEDRUN -->
+        <h1>Speedrunování</h1>
+        <p>Aktuálně držím Český rekord v nejrychlejším dohrání Minecraftu v nejznámější kategorii (any% random seed glitchless)<br>
+           s časem <u>8 minut a 39 vteřin</u>, což mi zajistilo 22. místo na světě, <a href="https://youtu.be/EinlQopG5KI?si=S475ybTZ8O228NxW">zde</a> je odkaz na video a <a href="https://www.speedrun.com/mc">tu</a> na žebříček.<br>
+           Dále mám druhé, třetí a čtvrté místo v ČR s časy 8:57, 9:05 a 9:09.<br>
+           Mám i pár světových rekordů v jiných kategoriích.<br>
+           V době psaní této stránky jsem již vygeneroval 1787707 Minecraft světů.
+        </p>
+    </div>
+    <div class="content"><!-- ZAVER -->
+        <h1>Závěr</h1>
+        <p>Řekl bych, že kdybych měl poměřit čas strávený v mém životě hraním Minecraftu a spáním, tak by se tyto dvě hodnoty blížily nebezpečně moc k sobě.<br>
+           Minecraft je opravdu skvělá hra s nekonečným množstvím možností, a nikdy mě neomrzí.<br>
+           Komukoli doporučuji si zahrát a zkusit hru Minecraft.
+        </p>
+    </div>
+    <br><br><br>
+    <!-- --------------------CONTENT-------------------- -->
+    <footer><!-- FOOTER -->
+        <div>
+            <p>Všechna práva vyhrazena</p>
+        </div>
+        <div>
+            <p style="margin-bottom: 0;">Děkuji Vám za návštěvu mé webové stránky!</p>
+            <p>Kontaktujte mě <a href="kontakt.html"><u>zde</u></a></p>
+        </div>
+        <div>
+            <a href="#" id="scrollTop"><u>Nahoru</u></a> <img src="nahoru.png" loading="lazy">
+        </div>
+    </footer>
+    <!-- JS -->
+    <script defer>
+        function setActiveMenuItem() {
+            const currentPage = window.location.pathname.split('/').pop();
+            const menuItems = document.querySelectorAll('.menu a');
+            menuItems.forEach(item => {
+                if (item.getAttribute('href') === currentPage) {
+                    item.classList.add('active');
+                }
+            });
+        }
+        window.onload = function() {
+            setActiveMenuItem();
+        };
+    </script>
+</body>
+</html>

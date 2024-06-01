@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herní módy</title>
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url(minecraft\ bg.png) no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(51, 51, 51, 0.8);
+            flex-wrap: wrap;
+        }
+        .menu a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .menu a:hover {
+            background-color: rgba(87, 87, 87, 0.9);
+        }
+        .menu a.active {
+            background-color: rgba(35, 35, 35, 0.9);
+        }
+        header {
+            text-align: center;
+            background-color: rgba(244, 244, 244, 0.8);
+            padding: 10px 0;
+        }
+        header img {
+            max-width: 60%;
+            height: auto;
+        }
+        .content {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            flex: 1;
+        }
+        .content p {
+            font-size: 25px;
+        }
+        .autor {
+            text-align: center;
+            color: rgb(26, 26, 26);
+            font-size: 30px;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        footer {
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 10px 20px;
+            position: sticky;
+            width: 100%;
+            bottom: 0;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        footer img {
+            width: 20px;
+            height: auto;
+            margin-left: 5px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+            .menu a {
+                text-align: center;
+                padding: 10px;
+            }
+            footer {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (max-width: 480px) {
+            .content p {
+                font-size: 18px;
+            }
+            footer {
+                font-size: 14px;
+            }
+            footer img {
+                width: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><!-- HEADER -->
+        <img src="minecraft logo.png" alt="Header Image" loading="lazy">
+        <div class="autor">
+            Tomáš Macháček <br><br>
+        </div>
+    </header>
+    <div class="menu"><!-- MENU -->
+        <a href="home.html">Domů</a>
+        <a href="mody.html">Herní módy</a>
+        <a href="zkusenosti.html">Moje zkušenosti</a>
+        <a href="fotky.html">Fotky</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <!-- --------------------CONTENT-------------------- -->
+    <div class="content"><!-- UVOD -->
+        <h1>Úvod</h1>
+        <p>Souslovím "Herní módy" mám na mysli způsoby hraní hry Minecraft.<br>
+           Existuje mnoho herních módů, proto níže napíšu jen nejznámější, nejzajímavější nebo nejrelevantnější.
+        </p>
+    </div>
+    <div class="content"><!-- SURVIVAL -->
+        <h1>Survival</h1>
+        <p>Nejznámější styl hraní Minecraftu je "survival", tedy hra o přežití.<br>
+           Hráč si získává suroviny v náhodně generovaném světě, buduje, těží, vylepšuje, a v noci se snaží přežít před příšerama.
+        </p>
+    </div>
+    <div class="content"><!-- MULTIPLAYER -->
+        <h1>Multiplayer</h1>
+        <p>Hra více hráčů (multiplayer), umožnuje hráčům připojit se na stejný server a prožívat dobrodružství Minecraftu společně.<br>
+           Nejčastější herní módy multiplayerových serverů jsou například:<br>
+           <li>SMP
+                <ul>
+                    <li>Survival Multiplayer</li>
+                </ul>
+            </li>
+            <li>Minihry
+                <ul>
+                    <li>PVP</li>
+                    <li>Bed Wars</li>
+                    <li>Parkour</li>
+                    <li>SkyBlock</li>
+                </ul>
+            </li>
+            <li>Roleplay</li>
+        </p>
+    </div>
+    <div class="content"><!-- SPECIFICKE -->
+        <h1>Specifické</h1>
+        <p>Zde je pár dalších příkladů herních módů v Minecraftu:<br>
+            <li>Redstone
+                <ul>
+                    <li>Stavba složitých redstone obvodů, strojů, dveří...</li>
+                </ul>
+            </li>
+            <li>Stavění
+                <ul>
+                    <li>Budování kreativních staveb, domy, hrady, mosty...</li>
+                </ul>
+            </li>
+            <li>Speedrunování
+                <ul>
+                    <li>Dosažení daného cíle za co nejrychlejší čas (více informací <a href="zkusenosti.html"><u>zde</u></a>).</li>
+                </ul>
+            </li>
+        </p>
+    </div>
+    <br><br><br>
+    <!-- --------------------CONTENT-------------------- -->
+    <footer><!-- FOOTER -->
+        <div>
+            <p>Všechna práva vyhrazena</p>
+        </div>
+        <div>
+            <p style="margin-bottom: 0;">Děkuji Vám za návštěvu mé webové stránky!</p>
+            <p>Kontaktujte mě <a href="kontakt.html"><u>zde</u></a></p>
+        </div>
+        <div>
+            <a href="#" id="scrollTop"><u>Nahoru</u></a> <img src="nahoru.png" loading="lazy">
+        </div>
+    </footer>
+    <!-- JS -->
+    <script defer>
+        function setActiveMenuItem() {
+            const currentPage = window.location.pathname.split('/').pop();
+            const menuItems = document.querySelectorAll('.menu a');
+            menuItems.forEach(item => {
+                if (item.getAttribute('href') === currentPage) {
+                    item.classList.add('active');
+                }
+            });
+        }
+        window.onload = function() {
+            setActiveMenuItem();
+        };
+    </script>
+</body>
+</html>

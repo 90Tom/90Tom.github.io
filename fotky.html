@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotky</title>
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('minecraft bg2.jfif') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(51, 51, 51, 0.8);
+            flex-wrap: wrap;
+        }
+        .menu a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .menu a:hover {
+            background-color: rgba(87, 87, 87, 0.9);
+        }
+        .menu a.active {
+            background-color: rgba(35, 35, 35, 0.9);
+        }
+        header {
+            text-align: center;
+            background-color: rgba(244, 244, 244, 0.8);
+            padding: 10px 0;
+        }
+        header img {
+            max-width: 60%;
+            height: auto;
+        }
+        .content {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            flex: 1;
+        }
+        .content p {
+            font-size: 25px;
+        }
+        .autor {
+            text-align: center;
+            color: rgb(26, 26, 26);
+            font-size: 30px;
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        footer {
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        footer img {
+            width: 20px;
+            height: auto;
+            margin-left: 5px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+            .menu a {
+                text-align: center;
+                padding: 10px;
+            }
+            footer {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                text-align: center;
+            }
+            footer div {
+                margin-bottom: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .content p {
+                font-size: 18px;
+            }
+            footer {
+                font-size: 14px;
+                padding: 5px;
+            }
+            footer img {
+                width: 16px;
+            }
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 150px);
+            gap: 20px;
+            padding: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.5s;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.2);
+        }
+        .gallery img.scaled {
+            transform: scale(2.5);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <header><!-- HEADER -->
+        <img loading="lazy" src="minecraft logo.png" alt="Header Image">
+        <div class="autor">
+            Tomáš Macháček <br><br>
+        </div>
+    </header>
+    <div class="menu"><!-- MENU -->
+        <a href="home.html">Domů</a>
+        <a href="mody.html">Herní módy</a>
+        <a href="zkusenosti.html">Moje zkušenosti</a>
+        <a href="fotky.html" class="active">Fotky</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <!-- --------------------CONTENT-------------------- -->
+    <div class="content"><!-- FOTKY UVOD -->
+        <h1>Fotky</h1>
+        <p>Zde naleznete různé fotografie z Minecraftu.</p>
+    </div>
+    <div class="content"><!-- FOTKY -->
+        <div class="gallery">
+            <img loading="lazy" src="foto1.png" alt="Foto 1">
+            <img loading="lazy" src="foto2.png" alt="Foto 2">
+            <img loading="lazy" src="foto3.png" alt="Foto 3">
+            <img loading="lazy" src="foto5.png" alt="Foto 5">
+            <img loading="lazy" src="foto6.png" alt="Foto 6">
+            <img loading="lazy" src="foto7.png" alt="Foto 7">
+            <img loading="lazy" src="foto8.png" alt="Foto 8">
+            <img loading="lazy" src="foto9.png" alt="Foto 9">
+            <img loading="lazy" src="foto10.jpg" alt="Foto 10">
+            <img loading="lazy" src="foto11.jpg" alt="Foto 11">
+            <img loading="lazy" src="foto12.jpg" alt="Foto 12">
+            <img loading="lazy" src="foto13.webp" alt="Foto 13">
+            <img loading="lazy" src="foto14.jpg" alt="Foto 14">
+            <img loading="lazy" src="foto15.webp" alt="Foto 15">
+            <img loading="lazy" src="foto16.webp" alt="Foto 16">
+            <img loading="lazy" src="foto17.avif" alt="Foto 17">
+            <img loading="lazy" src="foto18.jpg" alt="Foto 18">
+            <img loading="lazy" src="foto19.avif" alt="Foto 19">
+            <img loading="lazy" src="foto20.avif" alt="Foto 20">
+            <img loading="lazy" src="foto21.gif" alt="Foto 21">
+            <img loading="lazy" src="foto22.avif" alt="Foto 22">
+            <img loading="lazy" src="foto23.avif" alt="Foto 23">
+            <img loading="lazy" src="foto24.avif" alt="Foto 24">
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <!-- --------------------CONTENT-------------------- -->
+    <footer><!-- FOOTER -->
+        <div>
+            <p>Všechna práva vyhrazena</p>
+        </div>
+        <div>
+            <p style="margin-bottom: 0;">Děkuji Vám za návštěvu mé webové stránky!</p>
+            <p>Kontaktujte mě <a href="kontakt.html"><u>zde</u></a></p>
+        </div>
+        <div>
+            <a href="#" id="scrollTop"><u>Nahoru</u></a> <img loading="lazy" src="nahoru.png">
+        </div>
+    </footer>
+    <!-- JS -->
+    <script defer>
+        function toggleScale(event) {
+            var image = event.target;
+            image.classList.toggle('scaled');
+        }
+        var galleryImages = document.querySelectorAll('.gallery img');
+        galleryImages.forEach(function(image) {
+            image.addEventListener('click', toggleScale);
+        });
+    </script>
+</body>
+</html>
